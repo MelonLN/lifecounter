@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Counter</title>
+    <meta property="og:title" content="Life Counter" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="This website will calculate the mumber of seconds, minutes, hours, days that you have lived." />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <p class="text">Life Counter</p>
+    <p class="text">This website will calculate the mumber of seconds, minutes, hours, days that you have lived.</p>
+    <form id="date-box">
+        <label class="p" for="birthday">Select date</label><br>
+        <input type="date" id="birthday" name="birthday"><br>
+        <input class="button" type="submit" value="Calculate">
+    </form> 
+    <div class="container">
+        <div class="contai">
+            <button id="toggleButton4" style="display: none;" onclick="window.location.href='https:\\/\\/melonln.github.io'">$$\textbf{i}$$</button>
+            <button id="toggleButton" style="display: flex; opacity: 0;">$$\mathbb{N}$$</button>
+            <button id="toggleButton2" style="display: none;">$$\mathbb{R}$$</button>
+            <button id="toggleButton3" style="display: none;">$$\displaystyle{\displaylines{\pm}}$$</button>
+        </div>
+    </div>
+    <div class="container2">
+        <div id="contai2" style="opacity: 0;">
+            <div id="msg"></div>
+            <div id="result"></div>
+        </div>
+    </div>
+    <div id="error" style="opacity: 0;">To reduce the error, I assumed that you were born in the middle of the day (12:00:00.000), so the maximum error is reduced to about 12 hours.<br>
+        The largest time range:<br>
+        If you were born at the very end of the day (23:59:59.999). But we assume that you were born at 12:00:00.000, then the error will be 12 hours minus 1 millisecond.<br>
+        If you were born at the very beginning of the day (00:00:00.000). Similarly, assuming that you were born at 12:00:00.000, then the error will be -12 hours.<br> 
+        The smallest time range: If you were born at the exact middle of the day (12:00:00.000), then the smallest error will be 0, because we have accurately assumed your birth time.<br>
+        The error of this calculation is 12 hours.</div>
+    <div class="cre">Make by MelonLN</div>
+    <script src="./js/main.js"></script>      
+</body>
+</html>
