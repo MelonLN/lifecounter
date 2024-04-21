@@ -1,1 +1,1 @@
-# lifecounter.github.io
+# [Life Counter](https://melonln.github.io/lifecounter)
