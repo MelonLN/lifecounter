@@ -25,7 +25,7 @@ body {
 .text{
     display: flex;
     justify-content: center;
-    /* align-items: ; */
+    align-items: center;
     color: #ffff;
 
 }
